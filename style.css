@@ -1,0 +1,12 @@
+h1 {
+  font-family: Lato;
+  letter-spacing: 4px;
+}
+h4 {
+  text-transform: capitalize;
+}
+
+p {
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
