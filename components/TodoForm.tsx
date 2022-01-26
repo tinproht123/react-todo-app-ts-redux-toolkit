@@ -41,10 +41,14 @@ const TodoForm = (): JSX.Element => {
         <input
           type="checkbox"
           value={check}
-          onChange={(e) => setCheck(e.currentTarget.checked)}
+          onChange={(e: { target: HTMLInputElement }) =>
+            setCheck(e.currentTarget.checked)
+          }
           className="form-check-input"
         />
-        <label className="form-check-label mx-2">Check?</label>
+        <label className="form-check-label mx-2" style={{ letterSpacing: 3 }}>
+          Check?
+        </label>
       </div>
     </form>
   );
