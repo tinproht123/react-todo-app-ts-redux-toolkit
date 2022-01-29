@@ -10,3 +10,9 @@ p {
   letter-spacing: 1px;
   margin-bottom: 0;
 }
+.btn.btn-danger {
+  letter-spacing: 5px;
+}
+h2 {
+  letter-spacing: 5px;
+}

@@ -47,9 +47,15 @@ const todoSlice = createSlice({
       state.splice(state.indexOf(indexItem), 1);
       indexItem.check ? state.push(indexItem) : state.unshift(indexItem);
     },
+
+    //clear all item in list
+    clearList: (state) => {
+      return [];
+    },
   },
 });
 
-export const { addItem, removeItem, toggleCheck } = todoSlice.actions;
+export const { addItem, removeItem, toggleCheck, clearList } =
+  todoSlice.actions;
 
 export default todoSlice.reducer;
