@@ -9,7 +9,6 @@ const TodoForm = (): JSX.Element => {
 
   const dispatch = useDispatch();
 
-  //setText not working
   const handleSubmit = (e: any) => {
     e.preventDefault();
     if (text.trim().length === 0) {
