@@ -6,8 +6,6 @@ const TodoForm = (): JSX.Element => {
   //Input value
   const [text, setText] = useState('');
   const [check, setCheck] = useState(false);
-  const [editing, setEditing] = useState(false);
-  const [editID, setEditID] = useState(null);
 
   const dispatch = useDispatch();
 
